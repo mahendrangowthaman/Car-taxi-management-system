@@ -17,7 +17,7 @@ npm install express mongoose bcryptjs jsonwebtoken
 npm install --save-dev nodemon
 
 
-server.js
+### server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
@@ -52,7 +52,7 @@ app.listen(PORT, () => {
 
 ### Models
 
-User.js
+#### User.js
 
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
@@ -79,7 +79,7 @@ UserSchema.methods.matchPassword = async function (enteredPassword) {
 module.exports = mongoose.model('User', UserSchema);
 
 
-### Booking.js
+#### Booking.js
 
 const mongoose = require('mongoose');
 
@@ -96,7 +96,7 @@ module.exports = mongoose.model('Booking', BookingSchema);
 
 ### Routes
 
-user.js
+#### user.js
 
 const express = require('express');
 const User = require('../models/User');
@@ -134,7 +134,7 @@ router.post('/login', async (req, res) => {
 module.exports = router;
 
 
-### booking.js
+#### booking.js
 
 const express = require('express');
 const Booking = require('../models/Booking');
