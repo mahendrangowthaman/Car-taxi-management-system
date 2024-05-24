@@ -207,7 +207,7 @@ export default App;
 import React from 'react';
 
 function Home() {
-  return <h3>Welcome to Car Taxi Management System</h3>;
+  return <h4>Welcome to Car Taxi Management System</h4>;
 }
 
 export default Home;
